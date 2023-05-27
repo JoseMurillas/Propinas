@@ -1,23 +1,16 @@
-//Funcion nos ayuda ocultar el inicio
-window.onload = function() {
+window.onload = function() {//Funcion nos ayuda ocultar el inicio
   mostrarSaludo();
 };
 function mostrarSaludo() {
   document.getElementById('principal').style.display = 'block';
   document.getElementById('calculadora_tip').style.display = 'none';
   var indicator = document.getElementById('indicator'); //Agregamos color cuando el usuario presione inicio
-  for (var i = 0; i < indicators.length; i++) {
-    indicators[i].style.backgroundColor = 'gray';
-  }
 }
 
 function mostrarCalculadora() {
   document.getElementById('principal').style.display = 'none';
   document.getElementById('calculadora_tip').style.display = 'block';
   var indicator = document.getElementById('indicator');//Agregamos color cuando el usuario presione calculadora de propinas
-  for (var i = 0; i < indicators.length; i++) {
-    indicators[i].style.backgroundColor = 'gray';
-  }
 }
 
 function calcularPropina() { //Creamos las funciones de la calculadora de propinas
