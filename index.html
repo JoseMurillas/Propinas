@@ -8,15 +8,19 @@
   <header>
     <nav>
       <ul class="menu">
-        <li><a href="#" class="active">Inicio</a></li>
-        <li><a href="#tip-calculator">Calculadora de Propinas</a></li>
+        <li><a href="#" id="indicator" onclick="mostrarSaludo('principal');">Inicio</a></li>
+        <li><a href="#" id="indicator" onclick="mostrarCalculadora('calculadora_tip');">Calculadora de Propinas</a></li>
       </ul>
     </nav>
   </header>
-  
-  <h1>Calculadora de Propinas</h1>
-  
-  <div class="calculator">
+
+  <div id="principal">
+    <p>Hola como estas</p>
+  </div>
+
+  <div class="calculator" id="calculadora_tip">
+    <br><br>
+    <h1>Calculadora de Propinas</h1>
     <label for="total">Total de la cuenta:</label>
     <input type="number" id="total" placeholder="Monto total de la cuenta">
     
