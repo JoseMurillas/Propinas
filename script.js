@@ -30,7 +30,7 @@ function calcularPropina() { //Creamos las funciones de la calculadora de propin
   }
   
   var tip = total * (percentage / 100);
-  var totalAmount = (total + tip)-total;
+  var totalAmount = total + tip;
   
   document.getElementById("totalAmount").textContent = "$" + totalAmount.toFixed(2);
 }
